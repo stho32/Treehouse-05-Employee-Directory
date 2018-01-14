@@ -2,7 +2,7 @@
 
 This is the 5th project for the team treehouse techdegree as a javascript full stack developer.
 
-See [requirements](Documentation/Requirements.md) for the instructions.
+See [requirements](Documentation/requirements.md) for the instructions.
 
 The folder "Provided-Files" contains the files like teamtreehouse provided them for the project.
 
