@@ -1,25 +1,18 @@
-# HTML Project Template
+# Treehouse-05-Employee-Directory
 
-Use the template using on Mac/Linux:
+This is the 5th project for the team treehouse techdegree as a javascript full stack developer.
 
-```
-git clone --depth 1 https://github.com/stho32/ProjectTemplate-HTML.git <your-project-dir>
-cd <your-project-dir>
-rm -rf .git/
-git init
-code .
-```
+See [requirements](Documentation/Requirements.md) for the instructions.
 
-You'll get a plain project structure with a basic index.html
-empty files for css and js and a version of jquery and knockout.
-The rest is up to you.
+The folder "Provided-Files" contains the files like teamtreehouse provided them for the project.
 
-# Detailed requirements
+You might also be interested in my [notes](Documentation/Notes.md) where I share my thoughts about why I chose one way of solution over another. 
 
-Find the [requirements here](Documentation/requirements.md).
+Click [here](https://stho32.github.io/Treehouse-05-Employee-Directory/Source/index.html) to review the resulting page.
 
-Additional notes I may add [here](Documentation/notes.md).
+In a nutshell, this project is about creating an employee directory using a third party API to 
+get sample data. Treehouse provides the requirements and 2 mockups. 
 
-# Preview / Run 
+I try to become better at measuring and guessing time. For an insight into what I did and how long it took you may have fun looking at my [pomodoro-log](Documentation/Pomodoro-Log.md)
 
-*GitHub-Pages-Link may be added here later by me*
+
