@@ -13,6 +13,6 @@ Click [here](https://stho32.github.io/Treehouse-05-Employee-Directory/Source/ind
 In a nutshell, this project is about creating an employee directory using a third party API to 
 get sample data. Treehouse provides the requirements and 2 mockups. 
 
-I try to become better at measuring and guessing time. For an insight into what I did and how long it took you may have fun looking at my [pomodoro-log](Documentation/Pomodoro-Log.md)
+I try to become better at measuring and guessing time. For an insight into what I did and how long it took you may have fun looking at my [time-log](Documentation/time-log.md)
 
 
