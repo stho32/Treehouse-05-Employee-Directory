@@ -1,0 +1,35 @@
+/**
+ * Stylesheet for the employee directory
+ * 
+ * This times special: css custom variables
+ **/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    --main-margin : 10px;
+    margin: calc( var(--main-margin) * 2 );
+}
+
+/**
+ * Employee Directory Styles
+ **/
+
+/* 3 column design */
+.employee-directory {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: calc( var(--main-margin) * 2 );
+
+    margin-top: calc( var(--main-margin) * 2 );
+    margin-bottom: calc( var(--main-margin) * 2 );
+}
+
+.employee-card {
+    border : 1px solid red;
+    background-color : yellow;
+}
