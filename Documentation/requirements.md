@@ -7,7 +7,7 @@ Awesome Startup is a distributed company with employees working all over the wor
 Documentation for the random user API can be found here: https://randomuser.me/documentation
 
 
-- [ ] (R1) Get and display 12 random users from The Random User Generator API
+- [x] (R1) Get and display 12 random users from The Random User Generator API
 
     - [ ] (R2) Using photos and information that the API provides, you’ll display 12 users, along with some basic information:
       - [ ] (R3) Image
