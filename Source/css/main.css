@@ -12,12 +12,27 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
     --main-margin : 10px;
+    --background-color : #fcfcfc;
+
     margin: calc( var(--main-margin) * 2 );
+    background-color : var(--background-color);
+
+    font-size: 10pt;
 }
 
 /**
  * Employee Directory Styles
  **/
+.employee-directory-section {
+    --color : #4a4a4a;
+    --card-main-font-color : #404a51;
+    --card-secondary-font-color : #979c9f;
+    --card-border : #dfdfdf;
+    --card-background-color : #ffffff;
+
+    color : var(--color);
+}
+
 
 /* 3 column design */
 .employee-directory {
@@ -30,6 +45,45 @@ body {
 }
 
 .employee-card {
-    border : 1px solid red;
-    background-color : yellow;
+    --image-size : 110px;
+
+    display: grid;
+    grid-template-columns: calc( var(--image-size) + var(--main-margin) + var(--main-margin) ) auto;
+
+    border : 1px solid var(--card-border);
+    border-radius: var(--main-margin);
+    background-color : var(--card-background-color);
+
+    padding: calc( var(--main-margin) * 2 );
+}
+
+.employee-card_image {
+    border-radius: 50%;
+    height: var(--image-size);
+    width: var(--image-size);
+    background-position: center center;
+}
+
+.employee-card_details {
+    background-color: var(--card-background-color);
+    margin-top: auto;
+    margin-bottom: auto;
+
+    --card-detail-row-padding: 1em;
+}
+
+.employee-card_details_name {
+    color: var(--card-main-font-color);
+    font-weight: bold;
+    padding-bottom: var(--card-detail-row-padding);
+}
+
+.employee-card_details_email {
+    color: var(--card-secondary-font-color);
+    padding-bottom: calc( var(--card-detail-row-padding) * 0.66666 );
+}
+
+.employee-card_details_city {
+    color: var(--card-secondary-font-color);
+    padding-bottom: calc( var(--card-detail-row-padding) * 0.66666 );
 }
