@@ -74,5 +74,5 @@
         hideLoadingAnimation();
     }
 
-    //getRandomUsers(showUsersInDom);
+    getRandomUsers(showUsersInDom);
 })();
