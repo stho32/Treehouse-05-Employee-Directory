@@ -87,3 +87,46 @@ body {
     color: var(--card-secondary-font-color);
     padding-bottom: calc( var(--card-detail-row-padding) * 0.66666 );
 }
+
+/* Loading animation: 3 dots in a row */
+@keyframes dot-1-animation {
+    0%   { opacity: 0;    }
+    16%  { opacity: 0.34; }
+    32%  { opacity: 0.67; }
+    48%  { opacity: 1;    }
+    64%  { opacity: 0.67; }
+    80%  { opacity: 0.34; }
+    100% { opacity: 0;    }
+}
+
+@keyframes dot-2-animation {
+    0%   { opacity: 0.67; }
+    16%  { opacity: 0.34; }
+    32%  { opacity: 0;    }
+    48%  { opacity: 0.34; }
+    64%  { opacity: 0.67; }
+    80%  { opacity: 1;    }
+    100% { opacity: 0.67; }
+}
+
+@keyframes dot-3-animation {
+    0%   { opacity: 0.67; }
+    16%  { opacity: 1;    }
+    32%  { opacity: 0.67; }
+    48%  { opacity: 0.34; }
+    64%  { opacity: 0;    }
+    80%  { opacity: 0.34; }
+    100% { opacity: 0.67; }
+}
+
+.dot1 {
+    animation: dot-1-animation 2s infinite;
+}
+
+.dot2 {
+    animation: dot-2-animation 2s infinite;
+}
+
+.dot3 {
+    animation: dot-3-animation 2s infinite;
+}

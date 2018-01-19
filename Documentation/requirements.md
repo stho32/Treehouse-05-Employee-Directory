@@ -9,11 +9,11 @@ Documentation for the random user API can be found here: https://randomuser.me/d
 
 - [x] (R1) Get and display 12 random users from The Random User Generator API
 
-    - [ ] (R2) Using photos and information that the API provides, you’ll display 12 users, along with some basic information:
-      - [ ] (R3) Image
-      - [ ] (R4) First and Last Name
-      - [ ] (R5) Email
-      - [ ] (R6) City
+    - [x] (R2) Using photos and information that the API provides, you’ll display 12 users, along with some basic information:
+      - [x] (R3) Image
+      - [x] (R4) First and Last Name
+      - [x] (R5) Email
+      - [x] (R6) City
 
 
 - [ ] (R7) Create a modal window that will pop up when any part of the user’s row is clicked. The following details should display in the modal window:
