@@ -18,6 +18,7 @@ body {
     background-color : var(--background-color);
 
     font-size: 10pt;
+    position: absolute;
 }
 
 /**
@@ -29,6 +30,7 @@ body {
     --card-secondary-font-color : #979c9f;
     --card-border : #dfdfdf;
     --card-background-color : #ffffff;
+    --card-background-color--hover : #dfdfdf;
 
     color : var(--color);
 }
@@ -55,6 +57,12 @@ body {
     background-color : var(--card-background-color);
 
     padding: calc( var(--main-margin) * 2 );
+    transition: background-color .15s linear;
+    cursor: pointer;
+}
+
+.employee-card:hover {
+    background-color : var(--card-background-color--hover);
 }
 
 .employee-card_image {
@@ -65,7 +73,6 @@ body {
 }
 
 .employee-card_details {
-    background-color: var(--card-background-color);
     margin-top: auto;
     margin-bottom: auto;
 
@@ -129,4 +136,17 @@ body {
 
 .dot3 {
     animation: dot-3-animation 2s infinite;
+}
+
+.modal-overlay {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
