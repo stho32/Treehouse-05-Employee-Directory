@@ -4,6 +4,8 @@
 (() => {
     const $employeeDirectory = $(".employee-directory");
     const $employeeDirectoryLoading = $(".employee-directory-loading");
+    const modal = window.my.modal(".modal-overlay");
+    modal.close();
 
     const template = `
     <div class="employee-card">
@@ -55,6 +57,7 @@
 
     /* Show the mentioned users in the DOM */
     function showUsersInDom(users) {
+        $employeeDirectory.off("click");
         let resultHtml = "";
 
         for (let i = 0; i < users.length; i++) {
@@ -72,7 +75,10 @@
 
         $employeeDirectory.html(resultHtml);
         hideLoadingAnimation();
+        $employeeDirectory.on("click", modal.show);
     }
+
+    
 
     getRandomUsers(showUsersInDom);
 })();

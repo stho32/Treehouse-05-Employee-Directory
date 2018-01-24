@@ -4,3 +4,5 @@
 - 2018-01-18 ~1 hour design of the first employee card.
 - 2018-01-19 ~1:15 hours Added teriffic dot animation as loading sequence, also the 
 - 2018-01-22 05:16-> 5:27 a few lines on the modal window
+- 2018-01-24 04:20-04:55 modal dialog now opens and closes, prototype is close to wireframe
+

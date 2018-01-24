@@ -14,6 +14,14 @@ body {
     --main-margin : 10px;
     --background-color : #fcfcfc;
 
+    --color : #4a4a4a;
+    --card-main-font-color : #404a51;
+    --card-secondary-font-color : #979c9f;
+    --card-border : #dfdfdf;
+    --card-background-color : #ffffff;
+    --card-background-color--hover : #dfdfdf;
+
+
     margin: calc( var(--main-margin) * 2 );
     background-color : var(--background-color);
 
@@ -25,12 +33,6 @@ body {
  * Employee Directory Styles
  **/
 .employee-directory-section {
-    --color : #4a4a4a;
-    --card-main-font-color : #404a51;
-    --card-secondary-font-color : #979c9f;
-    --card-border : #dfdfdf;
-    --card-background-color : #ffffff;
-    --card-background-color--hover : #dfdfdf;
 
     color : var(--color);
 }
@@ -149,4 +151,66 @@ body {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; 
+    padding: 20px;
+    width: 33.3333%; 
+    border-radius: var(--main-margin);
+
+    border : 1px solid var(--card-border);
+    border-radius: var(--main-margin);
+    background-color : var(--card-background-color);
+
+}
+
+.modal-content__closebutton {
+    float: right; 
+}
+
+.modal-content__details {
+    text-align: center;
+}
+
+.modal-content__image img {
+    border-radius: 50%;
+    margin: calc( var(--main-margin) * 2 );
+}
+
+.modal-content__name {
+    color: var(--card-main-font-color);
+    margin: var(--main-margin);
+    font-weight: bold;
+}
+
+.modal-content__email {
+    color: var(--card-secondary-font-color);
+    margin: var(--main-margin);
+}
+
+.modal-content__city {
+    color: var(--card-secondary-font-color);
+    margin: var(--main-margin);
+}
+
+.modal-content__divider {
+    color: var(--card-secondary-font-color);
+    margin: var(--main-margin);
+}
+
+.modal-content__phoneNr {
+    color: var(--card-secondary-font-color);
+    margin: var(--main-margin);
+}
+
+.modal-content__location {
+    color: var(--card-secondary-font-color);
+    margin: var(--main-margin);
+}
+
+.modal-content__birthday {
+    color: var(--card-secondary-font-color);
+    margin: var(--main-margin);
 }
