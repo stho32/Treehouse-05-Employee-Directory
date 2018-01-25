@@ -1,8 +1,11 @@
 /**
  * Separate object for modal dialog control
+ * 
+ * I put this into "my" also. I do not want to pollute the global namespace
+ * more than neccessary.
  */
 
-window.my = {};
+window.my = window.my || {};
 
 window.my.modal = (selector) => {
     let publicApi = {};
@@ -19,7 +22,10 @@ window.my.modal = (selector) => {
     }
 
     publicApi.$DomElement.on("click", (event) => {
-        publicApi.close();
+        if ($(event.target).hasClass("modal-overlay") || 
+            $(event.target).hasClass("modal-content__closebutton")) {
+            publicApi.close();
+        } 
     });
 
     return publicApi;

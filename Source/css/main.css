@@ -21,6 +21,7 @@ body {
     --card-background-color : #ffffff;
     --card-background-color--hover : #dfdfdf;
 
+    --transition-speed: 0.15s;
 
     margin: calc( var(--main-margin) * 2 );
     background-color : var(--background-color);
@@ -59,7 +60,7 @@ body {
     background-color : var(--card-background-color);
 
     padding: calc( var(--main-margin) * 2 );
-    transition: background-color .15s linear;
+    transition: background-color --var(--transition-speed) linear;
     cursor: pointer;
 }
 
@@ -92,7 +93,7 @@ body {
     padding-bottom: calc( var(--card-detail-row-padding) * 0.66666 );
 }
 
-.employee-card_details_city {
+.employee-card_details_state {
     color: var(--card-secondary-font-color);
     padding-bottom: calc( var(--card-detail-row-padding) * 0.66666 );
 }
@@ -168,7 +169,17 @@ body {
 
 .modal-content__closebutton {
     float: right; 
+    padding: calc( var(--main-margin) / 2 );
+    font-size: 1.15em;
+    border-radius: var(--main-margin);
+    cursor: pointer;
+    transition: background-color var(--transition-speed) linear;
 }
+
+.modal-content__closebutton:hover {
+    background-color: var(--card-background-color--hover);
+}
+
 
 .modal-content__details {
     text-align: center;
@@ -190,7 +201,7 @@ body {
     margin: var(--main-margin);
 }
 
-.modal-content__city {
+.modal-content__state {
     color: var(--card-secondary-font-color);
     margin: var(--main-margin);
 }
