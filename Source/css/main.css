@@ -203,6 +203,11 @@ body {
     margin: var(--main-margin);
 }
 
+.modal-content__email a {
+    color: var(--card-secondary-font-color);
+    text-decoration: none;
+}
+
 .modal-content__state {
     color: var(--card-secondary-font-color);
     margin: var(--main-margin);
