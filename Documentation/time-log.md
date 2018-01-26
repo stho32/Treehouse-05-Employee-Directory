@@ -9,6 +9,9 @@
     - [x] close button + hover and + pointer cursor
     - [x] click on dialog does not close dialog
     - [x] correct data is loaded on click
-
-# Todo
- - [ ] Preprocess data: first letter of first name and last name have to be uppercase
+- 2018-01-26 06:01-06:55
+    - [x] instead of hiding the modal at javascript start which might flicker, 
+          change the CSS to avoid this. (modal shall be hidden at the start)
+    - [x] Preprocess data: first letter of first name and last name have to be uppercase
+    - [x] remove duplication of htmlEncode (use my.htmlEncode)
+    - Email-address is now a link
