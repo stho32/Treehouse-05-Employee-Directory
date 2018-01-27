@@ -15,7 +15,7 @@
     - [x] Preprocess data: first letter of first name and last name have to be uppercase
     - [x] remove duplication of htmlEncode (use my.htmlEncode)
     - Email-address is now a link
-- 2018-01-27 09:47-
+- 2018-01-27 09:47-10:48 
   - asked a few questions on slack
   - commented a few methods
   - added search box to the design
