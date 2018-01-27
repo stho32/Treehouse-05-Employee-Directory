@@ -15,3 +15,13 @@
     - [x] Preprocess data: first letter of first name and last name have to be uppercase
     - [x] remove duplication of htmlEncode (use my.htmlEncode)
     - Email-address is now a link
+- 2018-01-27 09:47-
+  - asked a few questions on slack
+  - commented a few methods
+  - added search box to the design
+  - thought about the design and how to implement the search functionality
+  - research on an easy way to only get employees fit for search (not using
+    funny letters in their names), but found none... thats a problem for later :)
+
+# some next todos
+ - [ ] birthdate format is different

@@ -60,6 +60,14 @@
         });
     }
 
+    /**
+     * Event handler for the click event on the employee card. 
+     * It opens the modal dialog with the correct data. 
+     * One event handler to handle them all. Thats why I store 
+     * the index in the cards dom data attribute.
+     * 
+     * @param {*} event 
+     */
     function showEmployeeModal(event) {
         var card = $(event.target).closest(".employee-card");
         var index = $(card).data("index");
@@ -80,14 +88,21 @@
 
             modal.show();
         }
-
     }
 
+    /**
+     * Three dots animated in a row, to be looked 
+     * at while ajax is calling out to the world...
+     */
     function showLoadingAnimation() {
         $employeeDirectoryLoading.show();
         $employeeDirectory.html("");
     }
 
+    /**
+     * World came around, gave us information, 
+     * No loading anymore...
+     */
     function hideLoadingAnimation() {
         $employeeDirectoryLoading.hide();
     }

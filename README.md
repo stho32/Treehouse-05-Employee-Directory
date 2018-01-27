@@ -16,3 +16,9 @@ get sample data. Treehouse provides the requirements and 2 mockups.
 I try to become better at measuring and guessing time. For an insight into what I did and how long it took you may have fun looking at my [time-log](Documentation/time-log.md)
 
 
+---
+
+Icon source: 
+
+if_search_173095.svg: https://www.iconfinder.com/icons/173095/search_icon#size=512
+

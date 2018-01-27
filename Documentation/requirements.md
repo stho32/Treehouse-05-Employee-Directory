@@ -16,21 +16,21 @@ Documentation for the random user API can be found here: https://randomuser.me/d
       - [x] (R6) City
 
 
-- [ ] (R7) Create a modal window that will pop up when any part of the user’s row is clicked. The following details should display in the modal window:
+- [x] (R7) Create a modal window that will pop up when any part of the user’s row is clicked. The following details should display in the modal window:
 
-    - [ ] (R8) Image
-    - [ ] (R9) Name
-    - [ ] (R10) Username
-    - [ ] (R11) Email
-    - [ ] (R12) Cell Number
-    - [ ] (R13) Detailed Address, including street name and number, city, country and post code.
-    - [ ] (R14) Birthdate
+    - [x] (R8) Image
+    - [x] (R9) Name
+    - [x] (R10) Username
+    - [x] (R11) Email
+    - [x] (R12) Cell Number
+    - [x] (R13) Detailed Address, including street name and number, city, country and post code.
+    - [x] (R14) Birthdate
 
-- [ ] (R15) Structure and style the user directory so that it roughly matches the provide mockup.
+- [x] (R15) Structure and style the user directory so that it roughly matches the provide mockup.
 
-    - [ ] (R16) Display the users in a grid or table
-    - [ ] (R17) Add a hover state to the rows of the user table.
-    - [ ] (R18) Make sure there’s a way to close the modal window
+    - [x] (R16) Display the users in a grid or table
+    - [x] (R17) Add a hover state to the rows of the user table.
+    - [x] (R18) Make sure there’s a way to close the modal window
 
 
 - [ ] (R19) Add a way to filter the directory by name or username. To do this, you’ll need to request a random user nationality that will only return data in the English alphabet. Note: you don't have to rely on the API to return search results. You'll need to write functionality that filters results once they already on the page.

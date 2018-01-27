@@ -34,7 +34,6 @@ body {
  * Employee Directory Styles
  **/
 .employee-directory-section {
-
     color : var(--color);
 }
 
@@ -237,4 +236,36 @@ body {
 .modal-content__birthday {
     color: var(--card-secondary-font-color);
     margin: var(--main-margin);
+}
+
+
+.header {
+    height: 2em;
+}
+
+.header h1 {
+    float: left;
+}
+
+.searchbox {
+    float:right;
+    max-width: 300px;
+    min-width: 100px;
+    width: 33%;
+    display: grid;
+    grid-template-columns: auto 40px;
+}
+
+
+.searchbox-query {
+}
+
+.searchbox-query input {
+    width: 100%;
+    border-radius: var(--main-margin);
+    padding : var(--main-margin);
+    font-size: 10pt;
+}
+
+.searchbox-icon {
 }
