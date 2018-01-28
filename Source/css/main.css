@@ -27,7 +27,6 @@ body {
     background-color : var(--background-color);
 
     font-size: 10pt;
-    position: absolute;
 }
 
 /**
@@ -35,13 +34,20 @@ body {
  **/
 .employee-directory-section {
     color : var(--color);
+    width : 100%;
 }
 
 
-/* 3 column design */
+/* 3 column design, well actually a flexible 
+ * design but in the screen width of my laptop
+ * its 3 columns, on mobile its one column, 
+ * on desktop its more columns depending on screen 
+ * size...
+ */
 .employee-directory {
     display: flex;
     flex-wrap: wrap;
+    
     grid-gap: calc( var(--main-margin) * 2 );
 
     margin-top: calc( var(--main-margin) * 2 );

@@ -6,8 +6,11 @@
 
     const $employeeDirectory = $(".employee-directory");
     const $employeeDirectoryLoading = $(".employee-directory-loading");
+    const $searchboxQuery = $("#searchbox-query");
+    $searchboxQuery.val("");
     const modal = window.my.modal(".modal-overlay");
     let currentUserData = [];
+    let filteredUserData = [];
 
     const template = `
     <div class="employee-card" data-index="$index$">
@@ -54,7 +57,7 @@
             success: function (data) {
                 /* Do some optimization on data before it gets processed */
                 captializeNames(data.results);
-
+                currentUserData = data.results;
                 callbackFunction(data.results);
             }
         });
@@ -107,9 +110,35 @@
         $employeeDirectoryLoading.hide();
     }
 
+    function filterUsersBySearchquery() {
+        let searchQuery = $searchboxQuery.val();
+
+        /* In case we have no search data
+           just show everything. */
+        if ( searchQuery === undefined ||
+             searchQuery === "" ) {
+            filteredUserData = currentUserData;
+            showUsersInDom(currentUserData);
+            return; 
+        }
+
+        let users = [];
+
+        currentUserData.forEach(user => {
+            let username = user.name.first + " " + user.name.last;
+            if ( username.indexOf(searchQuery) > -1 ) {
+                users.push(user);
+            }
+        });
+        
+        filteredUserData = users;
+        showUsersInDom(filteredUserData);
+    }
+
     /* Show the mentioned users in the DOM */
     function showUsersInDom(users) {
         $employeeDirectory.off("click");
+        $searchboxQuery.off("keyup");
         let resultHtml = "";
 
         for (let i = 0; i < users.length; i++) {
@@ -128,8 +157,9 @@
 
         $employeeDirectory.html(resultHtml);
         hideLoadingAnimation();
-        currentUserData = users;
+
         $employeeDirectory.on("click", showEmployeeModal);
+        $searchboxQuery.on("keyup", filterUsersBySearchquery);
     }
 
     getRandomUsers(showUsersInDom);
