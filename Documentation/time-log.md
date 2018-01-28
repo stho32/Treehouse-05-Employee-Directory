@@ -26,6 +26,7 @@
   - [x] max width for dialog
   - [x] flexgrid for main layout
   - [x] employee filter working
+  - [x] request only nationalities that work with the search
 
 # some next todos
  - [ ] birthdate format is different
