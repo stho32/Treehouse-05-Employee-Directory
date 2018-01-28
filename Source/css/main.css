@@ -231,6 +231,12 @@ body {
     cursor: pointer; 
 }
 
+.arrow-left:hover {
+    border-right:10px solid var(--card-secondary-font-color);    
+    cursor: not-allowed; 
+}
+
+
 
 .arrow-right {
     width: 0; 

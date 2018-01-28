@@ -9,6 +9,7 @@
     const $searchboxQuery = $("#searchbox-query");
     $searchboxQuery.val("");
     const modal = window.my.modal(".modal-overlay");
+    let modalDialogUserIndex = -1;
     let currentUserData = [];
     let filteredUserData = [];
 
@@ -65,6 +66,36 @@
     }
 
     /**
+     * This function takes the information for one user and does all 
+     * the neccessary things to display the information within the 
+     * modal dialog. 
+     * 
+     * @param {number} index Index of the user in the current filtered data
+     * @param {*} user 
+     */
+    function updateEmployeeModalFromUserData(index, user) {
+        /* When index is > 0 then there are more employees
+         * "left" of it.
+         */
+        modal.setLeftArrowActive(index > 0);
+        /* When the index is less then the entries in the filtered data, 
+         * then there are more employees "right" of it.
+         */
+        modal.setRightArrowActive(index < (filteredUserData.length-1));
+            
+        /* */
+        $(".modal-content__image img").attr("src", user.picture.large);
+        $(".modal-content__name").html(my.htmlEncode(user.name.first + " " + user.name.last));
+        $(".modal-content__email").html(
+            '<a href="mailto:' + my.htmlEncode(user.email) + '">' + 
+            my.htmlEncode(user.email) + '</a>');
+        $(".modal-content__state").html(my.htmlEncode(user.location.state));
+        $(".modal-content__phoneNr").html(my.htmlEncode(user.cell));
+        $(".modal-content__location").html(my.htmlEncode(user.location.street + ", " + user.nat + " " + user.location.postcode));
+        $(".modal-content__birthday").html("Birthday: " + user.dob.substring(0, 10));
+    }
+
+    /**
      * Event handler for the click event on the employee card. 
      * It opens the modal dialog with the correct data. 
      * One event handler to handle them all. Thats why I store 
@@ -77,20 +108,10 @@
         var index = $(card).data("index");
 
         var user = filteredUserData[index];
-        console.log(user);
+        modalDialogUserIndex = index;
 
         if (user !== undefined) {
-
-            $(".modal-content__image img").attr("src", user.picture.large);
-            $(".modal-content__name").html(my.htmlEncode(user.name.first + " " + user.name.last));
-            $(".modal-content__email").html(
-                '<a href="mailto:' + my.htmlEncode(user.email) + '">' + 
-                my.htmlEncode(user.email) + '</a>');
-            $(".modal-content__state").html(my.htmlEncode(user.location.state));
-            $(".modal-content__phoneNr").html(my.htmlEncode(user.cell));
-            $(".modal-content__location").html(my.htmlEncode(user.location.street + ", " + user.nat + " " + user.location.postcode));
-            $(".modal-content__birthday").html("Birthday: " + user.dob.substring(0, 10));
-
+            updateEmployeeModalFromUserData(index, user);
             modal.show();
         }
     }
@@ -162,6 +183,20 @@
 
         $employeeDirectory.on("click", showEmployeeModal);
         $searchboxQuery.on("keyup", filterUsersBySearchquery);
+    }
+
+    modal.leftArrowClickedCustomEventHandler = () => {
+        if ( modalDialogUserIndex > 0 ) {
+            modalDialogUserIndex -= 1;
+            updateEmployeeModalFromUserData(modalDialogUserIndex, filteredUserData[modalDialogUserIndex]);
+        }
+    }
+
+    modal.rightArrowClickedCustomEventHandler = () => {
+        if ( modalDialogUserIndex < (filteredUserData.length-1) ) {
+            modalDialogUserIndex += 1;
+            updateEmployeeModalFromUserData(modalDialogUserIndex, filteredUserData[modalDialogUserIndex]);
+        }
     }
 
     getRandomUsers(showUsersInDom);
