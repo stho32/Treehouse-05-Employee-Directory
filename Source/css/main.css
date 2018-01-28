@@ -40,8 +40,8 @@ body {
 
 /* 3 column design */
 .employee-directory {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     grid-gap: calc( var(--main-margin) * 2 );
 
     margin-top: calc( var(--main-margin) * 2 );
@@ -61,6 +61,13 @@ body {
     padding: calc( var(--main-margin) * 2 );
     transition: background-color --var(--transition-speed) linear;
     cursor: pointer;
+
+    min-width: calc( 400px - 3 * var(--main-margin) );
+    width: 30%;
+    margin-right: var(--main-margin);
+    margin-bottom: var(--main-margin);
+
+    flex-grow: 1;
 }
 
 .employee-card:hover {
@@ -242,7 +249,7 @@ body {
 
 
 .header {
-    height: 2em;
+    min-height: 2em;
 }
 
 .header h1 {
@@ -270,4 +277,22 @@ body {
 }
 
 .searchbox-icon {
+}
+
+/* 
+    Add a breakpoint for the search box:
+    On small screens we want the search box to appear below
+    the headline and use the full width.
+*/
+@media screen and (max-width: 799px) {
+    .header h1 {
+        float: none;
+    }
+    .searchbox {
+        float: none;
+        margin-top: var(--main-margin);
+        max-width: none;
+        min-width: none;
+        width: 100%;
+    }
 }

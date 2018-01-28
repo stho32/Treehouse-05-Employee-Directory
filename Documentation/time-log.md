@@ -24,7 +24,7 @@
     funny letters in their names), but found none... thats a problem for later :)
 - 2018-01-28 07:16-
   - [x] max width for dialog
-  - [ ] flexgrid for main layout
+  - [x] flexgrid for main layout
   - [ ] employee filter working
 
 # some next todos
