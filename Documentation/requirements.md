@@ -33,7 +33,7 @@ Documentation for the random user API can be found here: https://randomuser.me/d
     - [x] (R18) Make sure there’s a way to close the modal window
 
 
-- [ ] (R19) Add a way to filter the directory by name or username. To do this, you’ll need to request a random user nationality that will only return data in the English alphabet. Note: you don't have to rely on the API to return search results. You'll need to write functionality that filters results once they already on the page.
+- [x] (R19) Add a way to filter the directory by name or username. To do this, you’ll need to request a random user nationality that will only return data in the English alphabet. Note: you don't have to rely on the API to return search results. You'll need to write functionality that filters results once they already on the page.
 
 - [ ] (R20) Add a way to move back and forth between employee detail windows when the modal window is open.
 

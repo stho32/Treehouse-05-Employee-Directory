@@ -58,6 +58,7 @@
                 /* Do some optimization on data before it gets processed */
                 captializeNames(data.results);
                 currentUserData = data.results;
+                filteredUserData = data.results;
                 callbackFunction(data.results);
             }
         });
@@ -76,6 +77,7 @@
         var index = $(card).data("index");
 
         var user = filteredUserData[index];
+        console.log(user);
 
         if (user !== undefined) {
 
