@@ -49,7 +49,7 @@
         showLoadingAnimation();
 
         $.ajax({
-            url: 'https://randomuser.me/api/',
+            url: 'https://randomuser.me/api/?nat=us,dk,fr,gb',
             dataType: 'json',
             data: {
                 results: 12
