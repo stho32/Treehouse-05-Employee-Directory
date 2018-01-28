@@ -54,6 +54,7 @@ body {
     margin-bottom: calc( var(--main-margin) * 2 );
 }
 
+
 .employee-card {
     --image-size : 110px;
 
@@ -68,12 +69,15 @@ body {
     transition: background-color --var(--transition-speed) linear;
     cursor: pointer;
 
-    min-width: calc( 400px - 3 * var(--main-margin) );
-    width: 30%;
+    min-width: 400px;
+    max-width: 450px;
+    width: 32.0000%;
+
     margin-right: var(--main-margin);
     margin-bottom: var(--main-margin);
 
     flex-grow: 1;
+    flex-basis: 0;
 }
 
 .employee-card:hover {
@@ -300,5 +304,10 @@ body {
         max-width: none;
         min-width: none;
         width: 100%;
+    }
+    .employee-card {
+        width: 100%;
+        min-width: none;
+        max-width: none;
     }
 }
