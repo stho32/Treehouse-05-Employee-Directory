@@ -109,7 +109,7 @@ body {
     padding-bottom: calc( var(--card-detail-row-padding) * 0.66666 );
 }
 
-.employee-card_details_state {
+.employee-card_details_city {
     color: var(--card-secondary-font-color);
     padding-bottom: calc( var(--card-detail-row-padding) * 0.66666 );
 }

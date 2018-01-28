@@ -19,7 +19,7 @@
         <div class="employee-card_details">
             <div class="employee-card_details_name">$firstname$ $surname$</div>
             <div class="employee-card_details_email">$email$</div>
-            <div class="employee-card_details_state">$state$</div>
+            <div class="employee-card_details_city">$city$</div>
         </div>
     </div>
     `;
@@ -91,7 +91,7 @@
             my.htmlEncode(user.email) + '</a>');
         $(".modal-content__state").html(my.htmlEncode(user.location.state));
         $(".modal-content__phoneNr").html(my.htmlEncode(user.cell));
-        $(".modal-content__location").html(my.htmlEncode(user.location.street + ", " + user.nat + " " + user.location.postcode));
+        $(".modal-content__location").html(my.htmlEncode(user.location.street + ", " + user.location.city + ", " + user.location.state + " " + user.location.postcode));
         $(".modal-content__birthday").html("Birthday: " + user.dob.substring(0, 10));
     }
 
@@ -166,6 +166,7 @@
 
         for (let i = 0; i < users.length; i++) {
             let user = users[i];
+
             let userHtml = template;
 
             userHtml = userHtml.replace("$index$", i.toString());
@@ -173,7 +174,7 @@
             userHtml = userHtml.replace("$firstname$", my.htmlEncode(user.name.first));
             userHtml = userHtml.replace("$surname$", my.htmlEncode(user.name.last));
             userHtml = userHtml.replace("$email$", my.htmlEncode(user.email));
-            userHtml = userHtml.replace("$state$", my.htmlEncode(user.location.state));
+            userHtml = userHtml.replace("$city$", my.htmlEncode(user.location.city));
 
             resultHtml += userHtml;
         }

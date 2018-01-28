@@ -27,10 +27,9 @@
   - [x] flexgrid for main layout
   - [x] employee filter working
   - [x] request only nationalities that work with the search
-- 2018-01-28 18:20-19:54
+- 2018-01-28 18:20-19:54 ... 
   - [x] bugfix for modal dialog not opening
   - [x] added navigation arrows to dialog
   - [X] added in-modal-navigation to dialog
-
-# some next todos
- - [ ] birthdate format is different
+- 2018-01-28 20:55-21:18
+  - [x] last validations

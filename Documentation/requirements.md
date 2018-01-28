@@ -35,15 +35,15 @@ Documentation for the random user API can be found here: https://randomuser.me/d
 
 - [x] (R19) Add a way to filter the directory by name or username. To do this, you’ll need to request a random user nationality that will only return data in the English alphabet. Note: you don't have to rely on the API to return search results. You'll need to write functionality that filters results once they already on the page.
 
-- [ ] (R20) Add a way to move back and forth between employee detail windows when the modal window is open.
+- [x] (R20) Add a way to move back and forth between employee detail windows when the modal window is open.
 
 # How-You'll-be-graded-checklist
 
-- [ ] (R21) 12 random users are pulled from the the API
-- [ ] (R22) New random employee information displays each time the page refreshes
-- [ ] (R23) The directory includes the following: Employee Image, First and Last Name, Email, City
-- [ ] (R24) Employees can be filtered by name or username 
-- [ ] (R25) Modal window displays the following details: Employee image, Name, Email, Cell Number, Detailed Address, including street name and number, city, country and post code.,  Birthdate
-- [ ] (R26) There is a way to close the modal window
-- [ ] (R27) Functionality has been added to switch back and forth between employees when the detail modal window is open.
-- [ ] (R28) Directory has been styled so that all the major elements are in place and roughly matches the mockups 
+- [x] (R21) 12 random users are pulled from the the API
+- [x] (R22) New random employee information displays each time the page refreshes
+- [x] (R23) The directory includes the following: Employee Image, First and Last Name, Email, City
+- [x] (R24) Employees can be filtered by name or username 
+- [x] (R25) Modal window displays the following details: Employee image, Name, Email, Cell Number, Detailed Address, including street name and number, city, country and post code.,  Birthdate
+- [x] (R26) There is a way to close the modal window
+- [x] (R27) Functionality has been added to switch back and forth between employees when the detail modal window is open.
+- [x] (R28) Directory has been styled so that all the major elements are in place and roughly matches the mockups 
