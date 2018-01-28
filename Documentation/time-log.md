@@ -22,7 +22,7 @@
   - thought about the design and how to implement the search functionality
   - research on an easy way to only get employees fit for search (not using
     funny letters in their names), but found none... thats a problem for later :)
-- 2018-01-28 07:16-08:40
+- 2018-01-28 07:16-08:46
   - [x] max width for dialog
   - [x] flexgrid for main layout
   - [x] employee filter working
