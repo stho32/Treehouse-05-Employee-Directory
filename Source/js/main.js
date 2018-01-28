@@ -75,7 +75,7 @@
         var card = $(event.target).closest(".employee-card");
         var index = $(card).data("index");
 
-        var user = currentUserData[index];
+        var user = filteredUserData[index];
 
         if (user !== undefined) {
 
