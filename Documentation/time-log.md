@@ -22,6 +22,10 @@
   - thought about the design and how to implement the search functionality
   - research on an easy way to only get employees fit for search (not using
     funny letters in their names), but found none... thats a problem for later :)
+- 2018-01-28 07:16-
+  - [x] max width for dialog
+  - [ ] flexgrid for main layout
+  - [ ] employee filter working
 
 # some next todos
  - [ ] birthdate format is different

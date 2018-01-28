@@ -158,6 +158,8 @@ body {
     margin: 10% auto; 
     padding: 20px;
     width: 33.3333%; 
+    min-width: 400px;
+    max-width: 500px;
     border-radius: var(--main-margin);
 
     border : 1px solid var(--card-border);
