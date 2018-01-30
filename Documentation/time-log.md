@@ -33,3 +33,5 @@
   - [X] added in-modal-navigation to dialog
 - 2018-01-28 20:55-21:18
   - [x] last validations
+- 2018-01-30 05:35-05:40
+  - made search case insensitive as requested by my reviewer
