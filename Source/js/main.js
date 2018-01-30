@@ -146,9 +146,11 @@
         }
 
         let users = [];
+        searchQuery = searchQuery.toLowerCase();
 
         currentUserData.forEach(user => {
-            let username = user.name.first + " " + user.name.last;
+            let username = (user.name.first + " " + user.name.last).toLowerCase();
+
             if ( username.indexOf(searchQuery) > -1 ) {
                 users.push(user);
             }
